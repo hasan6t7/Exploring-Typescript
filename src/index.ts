@@ -1,8 +1,3 @@
-function greet(name: string): string {
-  return `Hello, ${name}`;
-}
-console.log(greet("Typescript"));
-
 // primitive data type
 
 // string
@@ -32,3 +27,36 @@ console.log(score2[0]);
 
 let student: [string, number, boolean] = ["Hasan", 21, false];
 console.log(student[0]);
+
+// any type
+
+let random: any = "xyz";
+random = 21;
+random = true;
+
+// unknown type
+
+let value: unknown = "world";
+if (typeof value === "string") {
+  console.log(value.toUpperCase());
+}
+
+// void type
+
+function messageLogger(): void {
+  console.log("logged successful");
+}
+
+function greet(name: string): string {
+  return `Hello, ${name}`;
+}
+console.log(greet("Typescript"));
+
+// undefined type
+let name;
+console.log(name);
+
+let notAssaigned: undefined = undefined;
+
+// null
+let nothing: null = null;
