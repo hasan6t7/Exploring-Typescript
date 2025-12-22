@@ -93,4 +93,32 @@ function displayStudent(student: students): void {
   console.log(`Courses :  ${student.courses.join(" , ")}`);
 }
 
-displayStudent(student4)
+displayStudent(student4);
+
+// function
+
+// function functionName(parameterName) {
+//     logic
+// }
+
+// function functionName(parameterName :  paramiter type ): retun type  {
+//     // logic
+// }
+
+function addition(num1: number, num2: number): number {
+  return num1 + num2;
+}
+console.log(addition(25, 25));
+
+function greet2(firstName: string, LastName: string, title?: string): string {
+  return `${title ? title : ""} ${firstName} ${LastName}`;
+}
+
+console.log(greet2("Md", "Hasanujjaman"));
+console.log(greet2("Md", "Hasanujjaman", "Engr."));
+
+function welcomeMessage(name: string = "Guest"): string {
+  return `Welcome ! ${name}`;
+}
+console.log(welcomeMessage())
+console.log(welcomeMessage("Hasan"))
