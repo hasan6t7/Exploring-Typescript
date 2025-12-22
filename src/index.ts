@@ -60,3 +60,37 @@ let notAssaigned: undefined = undefined;
 
 // null
 let nothing: null = null;
+
+type students = {
+  name: string;
+  age: number;
+  isMarried: boolean;
+  courses: Array<string>;
+  scores: number[];
+  info: [string, number, boolean];
+};
+
+const student4: students = {
+  name: "Hasan",
+  age: 21,
+  isMarried: false,
+  courses: ["react", "redux", "typescript"],
+  scores: [90, 95, 91],
+  info: ["Hasan", 21, false],
+};
+const student5: students = {
+  name: "Shawon",
+  age: 21,
+  isMarried: true,
+  courses: ["react", "redux", "typescript", "nodejs"],
+  scores: [90, 95, 91],
+  info: ["Hasan", 21, false],
+};
+
+function displayStudent(student: students): void {
+  console.log(`Name :  ${student.name}`);
+  console.log(`Age :  ${student.age}`);
+  console.log(`Courses :  ${student.courses.join(" , ")}`);
+}
+
+displayStudent(student4)
