@@ -40,4 +40,53 @@ function proccessInput(input) {
 }
 proccessInput("       I am a full stack web developer          ");
 proccessInput(10);
+// type guards
+// type of typeguards
+function display(value) {
+    if (typeof value === "string") {
+        console.log("It's a string : ", value.toUpperCase());
+    }
+    else {
+        console.log("It's a number : ", value.toFixed(3));
+    }
+}
+display("Mern Stack development");
+display(5500.546421);
+function move(vichale) {
+    if ("drive" in vichale) {
+        vichale.drive();
+    }
+    else {
+        vichale.sail();
+    }
+}
+const car = {
+    drive: () => {
+        console.log("car is driving");
+    },
+};
+move(car);
+// instanceof guards
+class Dog {
+    bark() {
+        console.log("Woof Woof");
+    }
+}
+class Cat {
+    meow() {
+        console.log("Meow Meow");
+    }
+}
+function makeSound(animal) {
+    if (animal instanceof Dog) {
+        animal.bark();
+    }
+    else {
+        animal.meow();
+    }
+}
+const dog = new Dog();
+const cat = new Cat();
+makeSound(dog);
+makeSound(cat);
 //# sourceMappingURL=app.js.map

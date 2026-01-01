@@ -54,3 +54,72 @@ function proccessInput(input: string | number) {
 
 proccessInput("       I am a full stack web developer          ");
 proccessInput(10);
+
+// type guards
+
+// type of typeguards
+
+function display(value: string | number) {
+  if (typeof value === "string") {
+    console.log("It's a string : ", value.toUpperCase());
+  } else {
+    console.log("It's a number : ", value.toFixed(3));
+  }
+}
+
+display("Mern Stack development");
+display(5500.546421);
+
+// in operator type guards
+
+type Car = {
+  drive: () => void;
+};
+
+type Boat = {
+  sail: () => void;
+};
+
+function move(vichale: Car | Boat) {
+  if ("drive" in vichale) {
+    vichale.drive();
+  } else {
+    vichale.sail();
+  }
+}
+
+const car: Car = {
+  drive: () => {
+    console.log("car is driving");
+  },
+};
+
+move(car);
+
+// instanceof guards
+
+class Dog {
+  bark() {
+    console.log("Woof Woof");
+  }
+}
+
+class Cat {
+  meow() {
+    console.log("Meow Meow");
+  }
+}
+
+function makeSound(animal: Dog | Cat) {
+  if (animal instanceof Dog) {
+    animal.bark();
+  } else {
+    animal.meow();
+  }
+}
+
+const dog = new Dog();
+const cat = new Cat();
+
+makeSound(dog);
+makeSound(cat)
