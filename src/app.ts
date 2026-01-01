@@ -14,5 +14,17 @@ const add = (a: number, b: number): number => {
 
 console.log(add(33, 33));
 
-const add2 = (x: number, y: number) => x + y;  //implicit return
-console.log(add2(66,66))
+const add2 = (x: number, y: number) => x + y; //implicit return
+console.log(add2(66, 66));
+
+// literal type
+
+type Action = "start" | "pasue" | "stop" | "submit" | "reset";
+
+function handleAction(action: Action) {
+  console.log(`Action : ${action}`);
+}
+
+handleAction("start")
+handleAction("pasue")
+handleAction("stop")
