@@ -89,4 +89,22 @@ const dog = new Dog();
 const cat = new Cat();
 makeSound(dog);
 makeSound(cat);
+function isFish(pet) {
+    return pet.swim !== undefined;
+}
+function move1(pet) {
+    if (isFish(pet)) {
+        pet.swim();
+    }
+    else {
+        pet.fly();
+    }
+}
+const myFish = {
+    swim: () => console.log("Fish is swiming"),
+};
+const myBird = {
+    fly: () => console.log("Brid is Flying"),
+};
+move1(myBird);
 //# sourceMappingURL=app.js.map

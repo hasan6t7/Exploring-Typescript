@@ -122,4 +122,36 @@ const dog = new Dog();
 const cat = new Cat();
 
 makeSound(dog);
-makeSound(cat)
+makeSound(cat);
+
+// custom type guards
+
+type Fish = {
+  swim: () => void;
+};
+
+type Bird = {
+  fly: () => void;
+};
+
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+
+function move1(pet: Fish | Bird) {
+  if (isFish(pet)) {
+    pet.swim();
+  } else {
+    pet.fly();
+  }
+}
+
+const myFish: Fish = {
+  swim: () => console.log("Fish is swiming"),
+};
+
+const myBird: Bird = {
+  fly: () => console.log("Brid is Flying"),
+};
+
+move1(myBird);
