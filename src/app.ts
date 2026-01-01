@@ -25,6 +25,32 @@ function handleAction(action: Action) {
   console.log(`Action : ${action}`);
 }
 
-handleAction("start")
-handleAction("pasue")
-handleAction("stop")
+handleAction("start");
+handleAction("pasue");
+handleAction("stop");
+
+// type narrowing
+
+function log(value: string | number) {
+  if (typeof value === "string") {
+    console.log(value.toUpperCase());
+  } else {
+    console.log(value.toFixed(2));
+  }
+}
+
+log("Its me hasan");
+log(5.635745447);
+
+// handle form input
+
+function proccessInput(input: string | number) {
+  if (typeof input === "number") {
+    console.log("Parsed as number : ", input * 3);
+  } else {
+    console.log("Parsed as string : ", input.trim());
+  }
+}
+
+proccessInput("       I am a full stack web developer          ");
+proccessInput(10);
