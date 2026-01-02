@@ -17,4 +17,25 @@ class BankAccount {
 }
 
 const account1 = new BankAccount("Md. Hasanujjaman", 1000);
-account1.showBalance()
+account1.showBalance();
+
+// inheritence
+
+class Animal {
+  constructor(public name: string) {}
+
+  move() {
+    console.log(`${this.name} is running`);
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    console.log("Woof Woof!!!");
+  }
+}
+
+const myDog = new Dog("Kitty");
+
+myDog.move();
+myDog.bark();
