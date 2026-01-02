@@ -20,4 +20,22 @@ function logData(data) {
 logData("Hasanujjaman");
 logData(22);
 logData(true);
+const userResponse = {
+    success: true,
+    data: {
+        name: "Hasan",
+    },
+};
+const numberResponse = {
+    success: true,
+    data: 22,
+};
+const id1 = {
+    id: 999999,
+};
+function getId(item) {
+    return item.id;
+}
+const result = getId(id1);
+console.log(`Id is ${result}`);
 //# sourceMappingURL=generics.js.map

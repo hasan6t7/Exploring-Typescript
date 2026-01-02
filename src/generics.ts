@@ -42,3 +42,23 @@ const numberResponse: ApiResponse<number> = {
   success: true,
   data: 22,
 };
+
+
+
+// constraints 
+
+
+interface HasId {
+  id: number;
+}
+
+const id1: HasId = {
+  id: 999999,
+};
+
+function getId<T extends HasId>(item: T): number {
+  return item.id;
+}
+
+const result = getId(id1);
+console.log(`Id is ${result}`);
