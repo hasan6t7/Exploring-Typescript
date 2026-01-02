@@ -31,7 +31,7 @@ class Animal {
 
 class Dog extends Animal {
   bark() {
-    console.log("Woof Woof!!!");
+    console.log(`${this.name} is barking woof woof`);
   }
 }
 
@@ -39,3 +39,23 @@ const myDog = new Dog("Kitty");
 
 myDog.move();
 myDog.bark();
+
+// implement keyword
+
+interface Driveable {
+  start: () => void;
+  stop: () => void;
+}
+
+class Car implements Driveable {
+  start() {
+    console.log("Car is Started...");
+  }
+  stop() {
+    console.log("Car is stoped");
+  }
+}
+
+const myCar = new Car();
+myCar.start();
+myCar.stop()
