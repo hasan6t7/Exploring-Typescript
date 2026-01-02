@@ -9,7 +9,7 @@ class Car {
         this.speed = speed;
     }
     move() {
-        console.log(` ${this.brand} car is moving ${this.speed} km/h`);
+        console.log(`${this.brand} car is moving ${this.speed} km/h`);
     }
 }
 class ElectricCar extends Car {
