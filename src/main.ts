@@ -7,7 +7,7 @@ if (!form || !username || !email || !msg) {
   throw new Error("Required elements not found");
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
 
   const usernameValue = username.value.trim();
@@ -26,5 +26,4 @@ form.addEventListener("submit", (e) => {
     usernameValue,
     emailValue,
   });
-
 });
