@@ -36,4 +36,21 @@ var Size;
 })(Size || (Size = {}));
 const h1 = Size.small;
 console.log(h1);
+var PostStatus;
+(function (PostStatus) {
+    PostStatus["Draft"] = "DRAFT";
+    PostStatus["Published"] = "PUBLISHED";
+    PostStatus["Archived"] = "ARCHIVED";
+})(PostStatus || (PostStatus = {}));
+const post = {
+    title: "Typescript enum",
+    content: "Enums are very powerful",
+    status: PostStatus.Published,
+};
+const post2 = {
+    title: "Typescript enum 2 ",
+    content: "Enums are very powerful 2 ",
+    status: PostStatus.Archived,
+};
+console.log(post2);
 //# sourceMappingURL=enum.js.map
