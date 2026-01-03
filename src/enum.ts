@@ -22,10 +22,21 @@ console.log(role);
 // string enum
 
 enum Status {
-  success="SUCCESS",
-  error="ERROR",
-  pending ="PENDING",
+  success = "SUCCESS",
+  error = "ERROR",
+  pending = "PENDING",
 }
 
-const res:Status = Status.success
-console.log(res)
+const res: Status = Status.success;
+console.log(res);
+
+// const enum
+
+const enum Size {
+  small,
+  medium,
+  large,
+}
+
+const h1 : Size = Size.small
+console.log(h1)

@@ -27,4 +27,13 @@ var Status;
 })(Status || (Status = {}));
 const res = Status.success;
 console.log(res);
+// const enum
+var Size;
+(function (Size) {
+    Size[Size["small"] = 0] = "small";
+    Size[Size["medium"] = 1] = "medium";
+    Size[Size["large"] = 2] = "large";
+})(Size || (Size = {}));
+const h1 = Size.small;
+console.log(h1);
 //# sourceMappingURL=enum.js.map
