@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Car {
     brand;
     speed;
@@ -20,4 +18,5 @@ class ElectricCar extends Car {
 const tesla = new ElectricCar("Tesla", 65);
 tesla.move();
 tesla.charge();
+export {};
 //# sourceMappingURL=vehicle.js.map

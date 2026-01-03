@@ -1,6 +1,4 @@
-"use strict";
 // error
-Object.defineProperty(exports, "__esModule", { value: true });
 function throwError() {
     throw new Error("Something Went Wrong!!");
 }
@@ -107,4 +105,5 @@ const myBird = {
     fly: () => console.log("Brid is Flying"),
 };
 move1(myBird);
+export {};
 //# sourceMappingURL=app.js.map

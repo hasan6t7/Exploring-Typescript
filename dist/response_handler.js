@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function handleApiResponse(res) {
     if (res.status === 200) {
         console.log("Success", res.message);
@@ -18,4 +16,5 @@ const userRes = handleApiResponse({
     },
 });
 console.log(userRes);
+export {};
 //# sourceMappingURL=response_handler.js.map

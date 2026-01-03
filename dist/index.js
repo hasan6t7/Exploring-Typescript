@@ -1,6 +1,4 @@
-"use strict";
 // primitive data type
-Object.defineProperty(exports, "__esModule", { value: true });
 // string
 let studentName = "Xyz";
 studentName = "Hasanujjaman";
@@ -84,4 +82,5 @@ function welcomeMessage(name = "Guest") {
 }
 console.log(welcomeMessage());
 console.log(welcomeMessage("Hasan"));
+export {};
 //# sourceMappingURL=index.js.map

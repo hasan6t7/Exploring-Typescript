@@ -1,6 +1,4 @@
-"use strict";
 // numeric enum
-Object.defineProperty(exports, "__esModule", { value: true });
 var Direction;
 (function (Direction) {
     Direction[Direction["up"] = 0] = "up";
@@ -53,4 +51,5 @@ const post2 = {
     status: PostStatus.Archived,
 };
 console.log(post2);
+export {};
 //# sourceMappingURL=enum.js.map

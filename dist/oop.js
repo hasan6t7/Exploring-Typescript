@@ -1,6 +1,4 @@
-"use strict";
 // class
-Object.defineProperty(exports, "__esModule", { value: true });
 class BankAccount {
     accountName;
     balance;
@@ -45,4 +43,5 @@ class Car {
 const myCar = new Car();
 myCar.start();
 myCar.stop();
+export {};
 //# sourceMappingURL=oop.js.map

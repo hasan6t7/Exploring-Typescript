@@ -1,6 +1,4 @@
-"use strict";
 // without generics
-Object.defineProperty(exports, "__esModule", { value: true });
 function logString(data) {
     console.log(data);
 }
@@ -38,4 +36,5 @@ function getId(item) {
 }
 const result = getId(id1);
 console.log(`Id is ${result}`);
+export {};
 //# sourceMappingURL=generics.js.map
