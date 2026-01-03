@@ -4,7 +4,7 @@ function throwError() {
 }
 // throwError();
 // arrow function
-const add = (a, b) => {
+export const add = (a, b) => {
     return a + b;
 };
 console.log(add(33, 33));
@@ -105,5 +105,4 @@ const myBird = {
     fly: () => console.log("Brid is Flying"),
 };
 move1(myBird);
-export {};
 //# sourceMappingURL=app.js.map

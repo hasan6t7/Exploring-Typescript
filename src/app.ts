@@ -8,7 +8,7 @@ function throwError(): never {
 
 // arrow function
 
-const add = (a: number, b: number): number => {
+export const add = (a: number, b: number): number => {
   return a + b;
 };
 
@@ -155,3 +155,6 @@ const myBird: Bird = {
 };
 
 move1(myBird);
+
+
+
