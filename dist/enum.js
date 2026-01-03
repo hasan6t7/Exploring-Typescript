@@ -18,4 +18,13 @@ var Role;
 })(Role || (Role = {}));
 const role = Role.superAdmin;
 console.log(role);
+// string enum
+var Status;
+(function (Status) {
+    Status["success"] = "SUCCESS";
+    Status["error"] = "ERROR";
+    Status["pending"] = "PENDING";
+})(Status || (Status = {}));
+const res = Status.success;
+console.log(res);
 //# sourceMappingURL=enum.js.map

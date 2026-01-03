@@ -16,10 +16,16 @@ enum Role {
   superAdmin,
 }
 
-const role : Role = Role.superAdmin
-console.log(role)
+const role: Role = Role.superAdmin;
+console.log(role);
 
+// string enum
 
+enum Status {
+  success="SUCCESS",
+  error="ERROR",
+  pending ="PENDING",
+}
 
-// string enum 
-
+const res:Status = Status.success
+console.log(res)
