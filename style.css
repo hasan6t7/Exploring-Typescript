@@ -1,0 +1,17 @@
+body {
+    background: black;
+    color: white;
+}
+.container {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+}
+input ,button {
+width: 100%;
+padding: 15px;
+margin-bottom: 10px;
+border-radius: 10px;
+border: none;
+outline: none;
+}
